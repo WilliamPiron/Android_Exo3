@@ -10,8 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="william.piron.fr.exo3.MainActivity">
 
-    <TextView
+    <Button
+        android:text="Previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/layout_buttonprevious" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_buttonnext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/layout_buttonprevious"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/framelayout">
+
+    </FrameLayout>
+
 </RelativeLayout>
